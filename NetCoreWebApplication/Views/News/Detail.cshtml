@@ -1,0 +1,17 @@
+﻿@model Entities.News
+
+@{
+    ViewData["Title"] = Model.Name + "Haber Detayı";
+}
+
+
+
+
+<div class="container text-center">
+ 
+    <h2 class="text-center">@Model.Name</h2>
+    <img src="/Img/@Model.Image" alt="@Model.Name" class="bd-placeholder-img rounded-circle" width="140" height="140" /> 
+    <hr />
+    <p class="text-center">@Model.Content</p>
+</div>
+
